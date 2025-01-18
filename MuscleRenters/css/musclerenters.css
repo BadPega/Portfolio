@@ -1,0 +1,159 @@
+#logo-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1; 
+}
+
+#logo {
+  width: 100px;
+}
+
+h1 {
+  display: inline;
+  margin-right: 120px; 
+}
+
+@media (max-width: 768px) {
+  #logo {
+    width: 50px;
+  }
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(226, 19, 22);
+  font-size: 50px;
+}
+
+h2 {
+  color: rgb(43, 55, 226);
+  font-size: large;
+}
+
+body {
+  background-color: rgb(196, 194, 194);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.grid-item {
+  background: #fff;
+  padding: 10px;
+}
+
+.grid-item-1 {
+  grid-column: span 3;
+  text-align: center;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.car {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: #fff;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+.rent-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1050px) {
+  body {
+    background-color: rgb(34, 33, 33);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: rgb(228, 42, 42);
+}

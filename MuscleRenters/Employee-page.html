@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<link rel="stylesheet" href="Employee-page.css">
+<h2>Employee Login Page</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="Work-roster.html" method="post" onsubmit="return validateForm()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Username" name="uname" id="uname" value="Employee" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Password" name="psw" id="psw" value="Employee" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember Password
+      </label>
+    </div>
+    <div id="error" style="color: red;"></div>
+    <a href="#">Forgot Password?</a></span>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<script>
+function validateForm() {
+  var username = document.getElementById("uname").value;
+  var password = document.getElementById("psw").value;
+  
+  if (username === "Employee" && password === "Employee") {
+    return true; 
+  } else {
+    document.getElementById("error").innerHTML = "Incorrect username or password";
+    return false; 
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Work Roster</title>
+    <link rel="stylesheet" href="css/Work-rosterAdmin.css">
+       </head>
+       <body>
+        <div class="container">
+            <h1>Work Roster</h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Shift</th>
+                </tr>
+                <tr>
+                    <td>Akshay Achternaam</td>
+                    <td>Monday</td>
+                    <td>7:00 - 15:00</td>
+                    <td>Morning</td>
+                </tr>
+                <tr>
+                    <td>Franlin Geels</td>
+                    <td>Monday</td>
+                    <td>15:00 - 23:00</td>
+                    <td>Evening</td>
+                </tr>
+                <tr>
+                    <td>Stefan Milovic</td>
+                    <td>Monday</td>
+                    <td>23:00-7:00</td>
+                    <td>Night</td>
+                </tr>
+                <tr>
+                    <td>Sun Tzu</td>
+                    <td>Tuesday</td>
+                    <td>7:00 - 15:00</td>
+                    <td>Morning</td>
+                </tr>
+                <tr>
+                    <td>Julius Ceasar</td>
+                    <td>Tuesday</td>
+                    <td>15:00 - 23:00</td>
+                    <td>Evening</td>
+                </tr>
+                <tr>
+                    <td>John Dick</td>
+                    <td>Wednesday</td>
+                    <td>23:00-7:00</td>
+                    <td>Night</td>
+                </tr>
+                <tr>
+                    <td>Henry Cavill</td>
+                    <td>Wednesday</td>
+                    <td>7:00 - 15:00</td>
+                    <td>Morning</td>
+                </tr>
+                <tr>
+                    <td>Nolan Grayson</td>
+                    <td>Thursday</td>
+                    <td>15:00 - 23:00</td>
+                    <td>Evening</td>
+                </tr>
+                <tr>
+                    <td>Leeroy Jankins</td>
+                    <td>Thursday</td>
+                    <td>23:00-7:00</td>
+                    <td>Night</td>
+                </tr>
+                <tr>
+                    <td>Jesus Christ</td>
+                    <td>Saturday</td>
+                    <td>7:00 - 15:00</td>
+                    <td>Morning</td>
+                </tr>
+                <tr>
+                    <td>Kim Possible</td>
+                    <td>Saturday</td>
+                    <td>15:00 - 23:00</td>
+                    <td>Evening</td>
+                </tr>
+                <tr>
+                    <td>Eric Brooks</td>
+                    <td>Sunday</td>
+                    <td>23:00-7:00</td>
+                    <td>Night</td>
+                </tr>
+                <tr>
+                    <td>Arthur Morgan</td>
+                    <td>Sunday</td>
+                    <td>7:00 - 15:00</td>
+                    <td>Morning</td>
+                </tr>
+                <tr>
+                    <td>Robert McCall</td>
+                    <td>Sunday</td>
+                    <td>15:00 - 23:00</td>
+                    <td>Evening</td>
+                </tr>
+                <tr>
+                    <td>Levi Ackerman</td>
+                    <td>Sunday</td>
+                    <td>23:00-7:00</td>
+                    <td>Night</td>
+                </tr>
+            </table>
+            
+            <form class="add-worker-form">
+                <label for="name">Name:</label>
+                <select id="day" name="day">
+                    <option value="Akshay Achternaam">Akshay Achternaam</option>
+                    <option value="Franlin Geels">Franlin Geels</option>
+                    <option value="Stefan Milovic">Stefan Milovic</option>
+                    <option value="Sun Tzu">Sun Tzu</option>
+                    <option value="Julius Ceasar">Julius Ceasar</option>
+                    <option value="John Dick">John Dick</option>
+                    <option value="Henry Cavill">Henry Cavill</option>
+                    <option value="Nolan Grayson">Nolan Grayson</option>
+                    <option value="Leeroy Jankins">Leeroy Jankins</option>
+                    <option value="Jesus Christ">Jesus Christ</option>
+                    <option value="Kim Possible">Kim Possible</option>
+                    <option value="Eric Brooks">Eric Brooks</option>
+                    <option value="Arthur Morgan">Arthur Morgan</option>
+                    <option value="Robert McCall">Robert McCall</option>
+                    <option value="Levi Ackerman">Levi Ackerman</option>
+                </select>
+                <label for="day">Day:</label>
+                <select id="day" name="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+                <label for="time">Time:</label>
+                <select id="time" name="time">
+                    <option value="7:00-15:00">7:00-15:00</option>
+                    <option value="15:00-23:00">15:00-23:00</option>
+                    <option value="23:00-7:00">23:00-7:00</option>
+                </select>
+                <label for="shift">Shift:</label>
+                <select id="shift" name="shift">
+                    <option value="Morning">Morning</option>
+                    <option value="Evening">Evening</option>
+                    <option value="Night">Night</option>
+                </select>
+                <button class="add-worker-button" onclick="addWorker()">Add Worker</button>
+                <button class="remove-worker-button" onclick="removeWorker()">remove Worker</button>
+            </form>
+        </div>
+        
+    </div>
+    <table>
+        <tr>
+            <th>Cars</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Cadillac CTS-V</td>
+            <td>Rented</td>
+        </tr>
+        <tr>
+            <td>Mercedes-AMG E 63</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>BMW M5</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Audi RS7</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Dodge Charger SRT Hellcat</td>
+            <td>Rented</td>
+        </tr>
+        <tr>
+            <td>Lexus GS F</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Jaguar XFR</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Porsche Panamera Turbo</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Tesla Model S Plaid</td>
+            <td>Rented</td>
+        </tr>
+        <tr>
+            <td>Alfa Romeo Giulia Quadrifoglio</td>
+            <td>Rented</td>
+        </tr>
+        <tr>
+            <td>Maserati Ghibli Trofeo</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Aston Martin DBS Superleggera</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Bentley Continental GT</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Rolls-Royce Wraith</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Tesla Model 3 Performance</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Genesis G80 Sport</td>
+            <td>Rented</td>
+        </tr>
+        <tr>
+            <td>Infiniti Q50 Red Sport</td>
+            <td>Rented</td>
+        </tr>
+        <tr>
+            <td>Ford Mustang Shelby GT500</td>
+            <td>Rented</td>
+        </tr>
+        <tr>
+            <td>Chevrolet Camaro ZL1</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Dodge Challenger SRT Demon</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Chrysler 300 SRT</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Lincoln Continental</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Nissan GT-R</td>
+            <td>Rented</td>
+        </tr>
+        <tr>
+            <td>Tesla Model X Performance</td>
+            <td>Rented</td>
+        </tr>
+        <tr>
+            <td>Volvo S60 Polestar</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Lamborghini Aventador SVJ</td>
+            <td>Rented</td>
+        </tr>
+        <tr>
+            <td>Ford Mustang Mach 1</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Dodge Charger SRT 392</td>
+            <td>Rented</td>
+        </tr>
+        <tr>
+            <td>Jaguar F-Type R</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Cadillac CT5-V Blackwing</td>
+            <td>Rented</td>
+        </tr>
+    </table>
+    <script>
+        function addWorker() {
+            var table = document.querySelector("table");
+            var newRow = table.insertRow(-1);
+
+            var nameCell = newRow.insertCell(0);
+            var dayCell = newRow.insertCell(1);
+            var timeCell = newRow.insertCell(2);
+            var shiftCell = newRow.insertCell(3);
+            var actionCell = newRow.insertCell(4);
+
+            var name = document.getElementById("worker-name").value;
+            var day = document.getElementById("worker-day").value;
+            var time = document.getElementById("worker-time").value;
+            var shift = document.getElementById("worker-shift").value;
+
+            nameCell.innerHTML = name;
+            dayCell.innerHTML = day;
+            timeCell.innerHTML = time;
+            shiftCell.innerHTML = shift;
+
+            var removeButton = document.createElement("button");
+            removeButton.className = "remove-worker-button";
+            removeButton.innerHTML = "Remove";
+            removeButton.onclick = function() {
+                removeWorker(newRow);
+            };
+            actionCell.appendChild(removeButton);
+
+            document.getElementById("worker-name").value = "";
+            document.getElementById("worker-day").value = "Monday";
+            document.getElementById("worker-time").value = "7:00-15:00";
+            document.getElementById("worker-shift").value = "Morning";
+        }
+
+        function removeWorker(row) {
+            var table = row.parentNode;
+            table.deleteRow(row.rowIndex);
+        }
+    </script>
+</body>
+</html>

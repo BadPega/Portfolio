@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/Client.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Us Too Rent</h1>
+        <form action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="car">Car You Wish Too Rent</label>
+                <select id="car" name="car">
+                    <option value="Mercedes-AMG E 63">Mercedes-AMG E 63</option>
+                    <option value="BMW M5">BMW M5</option>
+                    <option value="Audi RS7">Audi RS7</option>
+                    <option value="Lexus GS F">Lexus GS F</option>
+                    <option value="Jaguar XFR">Jaguar XFR</option>
+                    <option value="Porsche Panamera Turbo">Porsche Panamera Turbo</option>
+                    <option value="Maserati Ghibli Trofeo">Maserati Ghibli Trofeo</option>
+                    <option value="Aston Martin DBS Superleggera">Aston Martin DBS Superleggera</option>
+                    <option value="Bentley Continental GT">Bentley Continental GT</option>
+                    <option value="Rolls-Royce Wraith">Rolls-Royce Wraith</option>
+                    <option value="Tesla Model 3 Performance">Tesla Model 3 Performance</option>
+                    <option value="Chevrolet Camaro ZL1">Chevrolet Camaro ZL1</option>
+                    <option value="Dodge Challenger SRT Demon">Dodge Challenger SRT Demon</option>
+                    <option value="Chrysler 300 SRT">Chrysler 300 SRT</option>
+                    <option value="Volvo S60 Polestar">Volvo S60 Polestar</option>
+                    <option value="Ford Mustang Mach 1">Ford Mustang Mach 1</option>
+                    <option value="Jaguar F-Type R">Jaguar F-Type R</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="unavailable-cars">
+            <h2>Cars That Are unavailable</h2>
+            <ul>
+                <li>Cadillac CTS-V</li>
+                <li>Tesla Model S Plaid</li>
+                <li>Alfa Romeo Giulia Quadrifoglio</li>
+                <li>Genesis G80 Sport</li>
+                <li>Infiniti Q50 Red Sport</li>
+                <li>Ford Mustang Shelby GT500</li>
+                <li>Nissan GT-R</li>
+                <li>Lamborghini Aventador SVJ</li>
+                <li>Dodge Charger SRT 392</li>
+                <li>Cadillac CT5-V Blackwing</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
